@@ -1,0 +1,59 @@
+<!-- Crea un semplice form di registrazione con un input field in cui l’utente possa inserire il proprio nome. A fianco di questo input field crea due pulsanti: uno salverà il valore in localStorage, uno rimuoverà il valore precedentemente salvato (se presente). Mostra sopra l’input field il valore precedentemente salvato, se presente. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Es form storage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center my-5">Registrati!</h1>
+    <div class="container">
+      <div
+        class="row row-cols-2 justify-content-center align-items-center border border-2 border-dark p-4"
+      >
+        <div class="col">
+          <div class="row flex-column">
+            <div id="prev-name" class="col"></div>
+          </div>
+          <div class="col">
+            <input
+              id="text-field"
+              class="form-control"
+              type="text"
+              placeholder="Insert your name"
+              aria-label="default input example"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="row flex-column text-center">
+            <div class="col">
+              <button id="save" type="button" class="btn btn-success">
+                Save
+              </button>
+            </div>
+            <div class="col">
+              <button id="delete" type="button" class="btn btn-danger">
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./es1.js"></script>
+  </body>
+</html>
